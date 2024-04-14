@@ -16,7 +16,7 @@ import { hybrid } from "react-syntax-highlighter/dist/esm/styles/hljs";
 
 const Question = ({ info }: { info: QuestionType }) => {
   return (
-    <Card variant="outlined" sx={{ bgcolor: "#222", textAlign: "left", p: 2 }}>
+    <Card variant="outlined" sx={{ bgcolor: "#222", textAlign: "left", p: 2, marginTop: 4}}>
       <Typography variant="h5" color="lightBlue">
         {info.question}
       </Typography>
@@ -25,10 +25,10 @@ const Question = ({ info }: { info: QuestionType }) => {
         {info.code}
       </SyntaxHighlighter>
 
-      <List sx={{ bgcolor: "#333" }}>
+      <List sx={{ bgcolor: "#333" }} disablePadding>
         {info.answers.map((answer, index) => (
           <ListItem key={index}>
-            <ListItemButton>
+            <ListItemButton sx={{ textAlign: 'center' }} divider>
               <ListItemText primary={answer} />
             </ListItemButton>
           </ListItem>
