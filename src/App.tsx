@@ -15,7 +15,7 @@ function App() {
     <main>
       <Container maxWidth="sm">
         <Stack direction="row" alignItems="center" justify="center">
-          <Typography variant="h2" component="h1">
+          <Typography variant="h2" component="h1" color="lightyellow">
             <JavascriptLogo />
             Javascript Quiz
           </Typography>
