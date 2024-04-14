@@ -3,6 +3,7 @@ import JavascriptLogo from "./assets/JavascriptLogo";
 import { Container, Stack, Typography } from "@mui/material";
 import Start from "./assets/components/Start";
 import { useQuestionsStore } from "./store/questions";
+import Game from "./assets/components/Game";
 
 function App() {
 
@@ -21,7 +22,7 @@ function App() {
         </Stack>
 
         {questions.length === 0 && <Start />}
-        {questions.length > 0 && <h1>Game</h1>}
+        {questions.length > 0 && <Game />}
       </Container>
     </main>
   );
