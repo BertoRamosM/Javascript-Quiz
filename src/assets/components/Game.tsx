@@ -14,6 +14,7 @@ import SyntaxHighlighter from "react-syntax-highlighter";
 import { hybrid } from "react-syntax-highlighter/dist/esm/styles/hljs";
 import ArrowBack from "./ArrowBack";
 import ArrowNext from "./ArrowNext";
+import Footer from "../../Footer";
 
 const getBackgroundColor = (info: QuestionType, index: number) => {
   const { userSelectedAnswer, correctAnswer } = info;
@@ -108,6 +109,7 @@ const Game = () => {
         </IconButton>
       </Stack>
       <Question info={questionInfo} />
+      <Footer />
     </>
   );
 };

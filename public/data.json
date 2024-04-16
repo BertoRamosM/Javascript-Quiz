@@ -253,7 +253,7 @@
   {
     "id": 35,
     "question": "What is the output of this code?",
-    "code": "const obj3 = {...obj1, ...obj2};\nconsole.log(obj3);",
+    "code": "const obj1 ={a:foo};\nconst obj2 ={b:bar};/nconst obj3 = {...obj1, ...obj2};\nconsole.log(obj3);",
     "answers": [
       "{a: 'foo', b: 'bar'}",
       "{b: 'bar'}",

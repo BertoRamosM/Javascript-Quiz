@@ -17,8 +17,8 @@ function App() {
         <Stack
           direction="row"
           alignItems="center"
-          justify="center"
-          sx={{ minHeight: "200px", minWidth: "100vw" }}
+          justifyContent="center"
+          sx={{ minHeight: "200px" }}
         >
           <Typography variant="h2" component="h1" color="yellow">
             <JavascriptLogo />
@@ -29,6 +29,7 @@ function App() {
         {questions.length === 0 && <Start />}
         {questions.length > 0 && <Game />}
       </Container>
+      
     </main>
   );
 }
