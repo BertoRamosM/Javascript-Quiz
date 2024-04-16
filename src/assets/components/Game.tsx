@@ -98,10 +98,11 @@ const Game = () => {
         >
           <ArrowBack />
         </IconButton>
+        {currentQuestion +1}/{questions.length}
         <IconButton
           sx={{ padding: "0" }}
           onClick={goNextQuestion}
-          disabled={currentQuestion === questions.length - 1}
+          disabled={currentQuestion >= questions.length - 1}
         >
           <ArrowNext />
         </IconButton>
