@@ -65,7 +65,7 @@ export const useQuestionsStore = create<State>((set, get) => {
       const { currentQuestion } = get();
       const prevQuestion = currentQuestion - 1;
 
-      if (prevQuestion >= questions.length) {
+      if (prevQuestion >= 0) {
         set({ currentQuestion: prevQuestion });
       }
     },

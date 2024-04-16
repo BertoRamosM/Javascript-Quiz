@@ -92,14 +92,16 @@ const Game = () => {
         justifyContent="center"
       >
         <IconButton
+          sx={{ padding: "0" }}
           onClick={goPrevQuestion}
           disabled={currentQuestion === 0}
         >
-         <ArrowBack />
+          <ArrowBack />
         </IconButton>
         <IconButton
+          sx={{ padding: "0" }}
           onClick={goNextQuestion}
-          disabled={currentQuestion === questions.length}
+          disabled={currentQuestion === questions.length - 1}
         >
           <ArrowNext />
         </IconButton>
