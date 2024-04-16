@@ -14,8 +14,13 @@ function App() {
   return (
     <main>
       <Container maxWidth="sm">
-        <Stack direction="row" alignItems="center" justify="center">
-          <Typography variant="h2" component="h1" color="lightyellow">
+        <Stack
+          direction="row"
+          alignItems="center"
+          justify="center"
+          sx={{ minHeight: "200px", minWidth: "100vw" }}
+        >
+          <Typography variant="h2" component="h1" color="yellow">
             <JavascriptLogo />
             Javascript Quiz
           </Typography>
