@@ -8,6 +8,7 @@ import { useQuiz } from "./store/Quiz";
 import ReactLogo from "./assets/ReactLogo"
 import TypescriptLogo from "./assets/TypescriptLogo";
 import FooterInfo from "./assets/components/FooterInfo";
+import QuizzLogo from "../public/quizzo-logo.png"
 
 function App() {
   const currentQuiz = useQuiz((state) => state.currentQuiz);
@@ -27,7 +28,7 @@ function App() {
             {currentQuiz === "javascript" && <JavascriptLogo />}
             {currentQuiz === "react" && <ReactLogo />}
             {currentQuiz === "typescript" && <TypescriptLogo />}
-            Quizzo
+            <img src={QuizzLogo} style={{height:'160px'}}></img>
             {currentQuiz === undefined && <h5>Select a quiz:</h5>}
           </Typography>
         </Stack>
