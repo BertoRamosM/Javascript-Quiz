@@ -4,12 +4,12 @@ import { Container, Stack, Typography } from "@mui/material";
 import Start from "./assets/components/Start";
 import { useQuestionsStore } from "./store/questions";
 import Game from "./assets/components/Game";
+import { useQuiz } from "./store/Quiz";
 
 function App() {
+  const currentQuiz = useQuiz((state) => state.currentQuiz);
 
-  const questions = useQuestionsStore(state => state.questions)
-  console.log(questions)
-
+  const questions = useQuestionsStore((state) => state.questions);
 
   return (
     <main>
@@ -21,15 +21,16 @@ function App() {
           sx={{ minHeight: "200px" }}
         >
           <Typography variant="h2" component="h1" color="yellow">
-            <JavascriptLogo />
-            Javascript Quiz
+            {currentQuiz === "javascript" && <JavascriptLogo />}
+            {currentQuiz === "react" && <JavascriptLogo />}
+            {currentQuiz === "typescript" && <JavascriptLogo />}
+            Quizzo
           </Typography>
         </Stack>
 
         {questions.length === 0 && <Start />}
         {questions.length > 0 && <Game />}
       </Container>
-      
     </main>
   );
 }

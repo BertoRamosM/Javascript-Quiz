@@ -3,10 +3,11 @@ import { type Question } from "../types";
 import confetti from "canvas-confetti";
 import { persist, devtools } from "zustand/middleware";
 
+
 interface State {
   questions: Question[];
   currentQuestion: number;
-  fetchQuestions: (limit: number) => Promise<void>;
+fetchQuestions: (limit: number, currentQuiz: string) => Promise<void>;
   selectAnswer: (questionId: number, answerIndex: number) => void;
   goNextQuestion: () => void;
   goPreviousQuestion: () => void;
@@ -24,8 +25,9 @@ export const useQuestionsStore = create<State>()(
           questions: [],
           currentQuestion: 0,
 
-          fetchQuestions: async (limit: number) => {
-            const res = await fetch(`${API_URL}/data.json`);
+          fetchQuestions: async (limit: number, currentQuiz: string) => {
+             if (!currentQuiz) return;
+            const res = await fetch(`${API_URL}/${currentQuiz}-data.json`);
             const json = await res.json();
 
             const questions = json
