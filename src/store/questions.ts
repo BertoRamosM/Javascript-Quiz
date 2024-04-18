@@ -2,6 +2,7 @@ import { create } from "zustand";
 import { type Question } from "../types";
 import confetti from "canvas-confetti";
 import { persist, devtools } from "zustand/middleware";
+import { useQuiz } from "./Quiz"; 
 
 
 interface State {
@@ -86,6 +87,7 @@ export const useQuestionsStore = create<State>()(
           },
 
           reset: () => {
+             useQuiz.getState().changeQuiz(undefined);
             set({ currentQuestion: 0, questions: [] }, false, "RESET");
           },
         };
