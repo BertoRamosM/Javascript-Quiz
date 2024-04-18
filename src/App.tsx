@@ -29,7 +29,7 @@ function App() {
             {currentQuiz === "react" && <ReactLogo />}
             {currentQuiz === "typescript" && <TypescriptLogo />}
             <img src={QuizzLogo} style={{height:'160px'}}></img>
-            {currentQuiz === undefined && <h5>Select a quiz:</h5>}
+            {currentQuiz === undefined && <h6>Select a quiz:</h6>}
           </Typography>
         </Stack>
 

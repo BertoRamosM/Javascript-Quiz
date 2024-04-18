@@ -5,7 +5,6 @@ import { useQuiz } from "../../store/Quiz";
 const LIMIT_QUESTIONS = 10;
 
 const Start = () => {
-  const currentQuiz = useQuiz((state) => state.currentQuiz);
   const quizzes = useQuiz((state) => state.quizzes)
   const changeQuiz = useQuiz((state) => state.changeQuiz);
 
@@ -22,7 +21,12 @@ const Start = () => {
     <>
       {quizzes.map((quiz, index) => {
         return (
-          <Button onClick={()=>handleClick(quiz)} variant="contained" key={index} style={{marginLeft: '1.5rem'}}>
+          <Button
+            onClick={() => handleClick(quiz)}
+            variant="outlined"
+            key={index}
+            style={{ marginLeft: "1.5rem" }}
+          >
             {quiz}
           </Button>
         );
