@@ -5,6 +5,8 @@ import Start from "./assets/components/Start";
 import { useQuestionsStore } from "./store/questions";
 import Game from "./assets/components/Game";
 import { useQuiz } from "./store/Quiz";
+import ReactLogo from "./assets/ReactLogo"
+import TypescriptLogo from "./assets/TypescriptLogo";
 
 function App() {
   const currentQuiz = useQuiz((state) => state.currentQuiz);
@@ -20,10 +22,11 @@ function App() {
           justifyContent="center"
           sx={{ minHeight: "200px" }}
         >
-          <Typography variant="h2" component="h1" color="yellow">
+          <Typography variant="h2" component="h1" color="white">
+            {currentQuiz === undefined && <h4>Hola</h4>}
             {currentQuiz === "javascript" && <JavascriptLogo />}
-            {currentQuiz === "react" && <JavascriptLogo />}
-            {currentQuiz === "typescript" && <JavascriptLogo />}
+            {currentQuiz === "react" && <ReactLogo />}
+            {currentQuiz === "typescript" && <TypescriptLogo />}
             Quizzo
           </Typography>
         </Stack>

@@ -6,12 +6,14 @@ const LIMIT_QUESTIONS = 10;
 
 const Start = () => {
   const currentQuiz = useQuiz((state) => state.currentQuiz);
-  const quizzes = useQuiz((state)=> state.quizzes)
+  const quizzes = useQuiz((state) => state.quizzes)
+  const changeQuiz = useQuiz((state) => state.changeQuiz);
 
   const fetchQuestions = useQuestionsStore((state) => state.fetchQuestions);
 
-  const handleClick = () => {
-    fetchQuestions(LIMIT_QUESTIONS, currentQuiz);
+  const handleClick = (quiz: string) => {
+    fetchQuestions(LIMIT_QUESTIONS, quiz);
+    changeQuiz(quiz)
   };
 
   
@@ -20,7 +22,7 @@ const Start = () => {
     <>
       {quizzes.map((quiz, index) => {
         return (
-          <Button onClick={handleClick} variant="contained" key={index}>
+          <Button onClick={()=>handleClick(quiz)} variant="contained" key={index}>
             {quiz}
           </Button>
         );

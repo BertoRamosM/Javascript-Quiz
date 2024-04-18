@@ -9,5 +9,5 @@ interface QuizzState {
 export const useQuiz = create<QuizzState>((set) => ({
   currentQuiz: 'javascript',
   quizzes: ["javascript", "react", "typescript"],
-  changeQuizz: (q: string) => set((state) => ({ ...state, currentQuiz: q })),
+  changeQuiz: (q: string) => set((state) => ({ ...state, currentQuiz: q })),
 }));
