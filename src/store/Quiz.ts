@@ -7,7 +7,7 @@ interface QuizzState {
 }
 
 export const useQuiz = create<QuizzState>((set) => ({
-  currentQuiz: 'javascript',
+  currentQuiz: undefined,
   quizzes: ["javascript", "react", "typescript"],
   changeQuiz: (q: string) => set((state) => ({ ...state, currentQuiz: q })),
 }));

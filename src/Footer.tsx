@@ -12,11 +12,10 @@ const Footer = () => {
     <footer style={{ marginTop: "16px" }}>
       <strong>{`${correct} Correct - ${incorrect} Incorrect - ${unanswered} Unanswered`}</strong>
 
-      <div style={{marginTop: '16px'}}>
-        <Button onClick={() => reset()}>
-          Reset Game
-        </Button>
+      <div style={{ marginTop: "16px" }}>
+        <Button onClick={() => reset()}>Reset Game</Button>
       </div>
+
     </footer>
   );
 }

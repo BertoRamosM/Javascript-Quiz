@@ -7,6 +7,7 @@ import Game from "./assets/components/Game";
 import { useQuiz } from "./store/Quiz";
 import ReactLogo from "./assets/ReactLogo"
 import TypescriptLogo from "./assets/TypescriptLogo";
+import FooterInfo from "./assets/components/FooterInfo";
 
 function App() {
   const currentQuiz = useQuiz((state) => state.currentQuiz);
@@ -23,17 +24,18 @@ function App() {
           sx={{ minHeight: "200px" }}
         >
           <Typography variant="h2" component="h1" color="white">
-            {currentQuiz === undefined && <h4>Hola</h4>}
             {currentQuiz === "javascript" && <JavascriptLogo />}
             {currentQuiz === "react" && <ReactLogo />}
             {currentQuiz === "typescript" && <TypescriptLogo />}
             Quizzo
+            {currentQuiz === undefined && <h5>Select a quiz:</h5>}
           </Typography>
         </Stack>
 
         {questions.length === 0 && <Start />}
         {questions.length > 0 && <Game />}
       </Container>
+      <FooterInfo />
     </main>
   );
 }

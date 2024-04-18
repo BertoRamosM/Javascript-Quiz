@@ -1,0 +1,602 @@
+[
+  {
+    "id": 1,
+    "question": "In React, what is the purpose of JSX?",
+    "code": "",
+    "answers": [
+      "To describe the UI and its state at any point in time",
+      "To define CSS styles for components",
+      "To manage asynchronous operations",
+      "To perform server-side rendering"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 2,
+    "question": "What is the virtual DOM in React?",
+    "code": "",
+    "answers": [
+      "A representation of the actual HTML DOM",
+      "A separate DOM used only in development mode",
+      "A virtual reality simulation created by React",
+      "An internal data structure that mirrors the real DOM"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": 3,
+    "question": "What is the purpose of React components?",
+    "code": "",
+    "answers": [
+      "To style HTML elements",
+      "To encapsulate reusable UI functionality",
+      "To interact with a database",
+      "To handle server-side logic"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 4,
+    "question": "What lifecycle method is invoked immediately after a component is inserted into the DOM?",
+    "code": "",
+    "answers": [
+      "componentWillMount",
+      "componentDidMount",
+      "componentWillUnmount",
+      "componentDidUnmount"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 5,
+    "question": "How can you prevent a React component from rendering when its state or props haven't changed?",
+    "code": "",
+    "answers": [
+      "By using the shouldComponentUpdate lifecycle method",
+      "By setting a timer to delay rendering",
+      "By manually updating the DOM",
+      "By using React.memo()"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 6,
+    "question": "What is the purpose of React Hooks?",
+    "code": "",
+    "answers": [
+      "To connect React components to Redux",
+      "To manage stateful logic in functional components",
+      "To handle routing in React applications",
+      "To create animations and transitions"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 7,
+    "question": "What does the useState() hook do in React?",
+    "code": "",
+    "answers": [
+      "It allows you to fetch data from an API",
+      "It enables the use of CSS-in-JS libraries",
+      "It adds state to functional components",
+      "It defines routing behavior in React applications"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 8,
+    "question": "What is the purpose of useEffect() hook in React?",
+    "code": "",
+    "answers": [
+      "To handle mouse events",
+      "To manage component lifecycle events",
+      "To fetch data asynchronously",
+      "To create reusable components"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 9,
+    "question": "What is JSX in React?",
+    "code": "",
+    "answers": [
+      "A JavaScript extension for building user interfaces",
+      "A JavaScript library for building interactive web applications",
+      "A syntax for defining HTML elements within JavaScript code",
+      "A database management system used in React applications"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 10,
+    "question": "What is the purpose of the render() method in React components?",
+    "code": "",
+    "answers": [
+      "To define the initial state of the component",
+      "To handle user input events",
+      "To return a description of what the UI should look like",
+      "To perform server-side rendering"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 11,
+    "question": "How can you pass data from a parent component to a child component in React?",
+    "code": "",
+    "answers": [
+      "By using global variables",
+      "By modifying the DOM directly",
+      "By using props",
+      "By using Redux"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 12,
+    "question": "What is the purpose of the key attribute in React lists?",
+    "code": "",
+    "answers": [
+      "To specify the order of elements in the list",
+      "To provide a unique identifier for each list item",
+      "To define the styling for list items",
+      "To trigger animations when items are added or removed"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 13,
+    "question": "How can you conditionally render components in React?",
+    "code": "",
+    "answers": [
+      "By using the if-else statement in JSX",
+      "By setting the display property to none",
+      "By using the ternary operator or logical && operator",
+      "By using the display attribute"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 14,
+    "question": "What is the purpose of props in React components?",
+    "code": "",
+    "answers": [
+      "To manage component state",
+      "To define the structure of HTML elements",
+      "To pass data from parent to child components",
+      "To handle events triggered by user interactions"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 15,
+    "question": "What is the purpose of React Router?",
+    "code": "",
+    "answers": [
+      "To manage state in React applications",
+      "To handle asynchronous operations",
+      "To create animations and transitions",
+      "To implement client-side routing in single-page applications"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": 16,
+    "question": "How do you create a reusable component in React?",
+    "code": "",
+    "answers": [
+      "By defining a JavaScript function",
+      "By using the extends keyword",
+      "By importing a pre-built component from a library",
+      "By using the React.create() method"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 17,
+    "question": "What is the purpose of React.Fragment?",
+    "code": "",
+    "answers": [
+      "To define CSS styles for components",
+      "To encapsulate JSX elements without adding extra nodes to the DOM",
+      "To manage global state in React applications",
+      "To handle routing between different components"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 18,
+    "question": "How can you handle user input in React forms?",
+    "code": "",
+    "answers": [
+      "By using event listeners like onClick",
+      "By directly modifying the DOM",
+      "By using the state and onChange event handlers",
+      "By using inline styles"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 19,
+    "question": "What is the purpose of the useContext() hook in React?",
+    "code": "",
+    "answers": [
+      "To fetch data from an API",
+      "To manage state in functional components",
+      "To handle user authentication",
+      "To access context values in functional components"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": 20,
+    "question": "How can you update the state of a component in React?",
+    "code": "",
+    "answers": [
+      "By directly modifying the state object",
+      "By using the setState() method",
+      "By using props",
+      "By calling the render() method"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 21,
+    "question": "What is the purpose of React.memo()?",
+    "code": "",
+    "answers": [
+      "To memoize expensive function calls",
+      "To create memoized components for improved performance",
+      "To manage state in functional components",
+      "To define CSS styles for components"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 22,
+    "question": "How can you handle events in React?",
+    "code": "",
+    "answers": [
+      "By using event listeners like onClick",
+      "By modifying the DOM directly",
+      "By using global variables",
+      "By calling the render() method"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 23,
+    "question": "What is the purpose of the useRef() hook in React?",
+    "code": "",
+    "answers": [
+      "To reference DOM elements or React elements",
+      "To fetch data from an API",
+      "To handle user authentication",
+      "To manage global state in React applications"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 24,
+    "question": "How can you style React components?",
+    "code": "",
+    "answers": [
+      "By using inline styles",
+      "By defining CSS classes and applying them to components",
+      "By using CSS-in-JS libraries",
+      "All of the above"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": 25,
+    "question": "What is the purpose of the useCallback() hook in React?",
+    "code": "",
+    "answers": [
+      "To perform server-side rendering",
+      "To memoize expensive function calls",
+      "To fetch data from an API",
+      "To manage component lifecycle events"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 26,
+    "question": "What is the purpose of React.lazy() and Suspense in React?",
+    "code": "",
+    "answers": [
+      "To dynamically import components and handle loading states",
+      "To manage global state in React applications",
+      "To define CSS styles for components",
+      "To handle routing between different components"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 27,
+    "question": "What is the purpose of the useHistory() hook in React Router?",
+    "code": "",
+    "answers": [
+      "To fetch data from an API",
+      "To handle user authentication",
+      "To manage navigation history in React applications",
+      "To create animations and transitions"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 28,
+    "question": "What is the purpose of React portals?",
+    "code": "",
+    "answers": [
+      "To handle user input in forms",
+      "To render children into a DOM node outside the parent component's hierarchy",
+      "To manage asynchronous operations",
+      "To create memoized components"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 29,
+    "question": "What is the purpose of the withRouter() higher-order component in React Router?",
+    "code": "",
+    "answers": [
+      "To create reusable components",
+      "To pass additional props to components rendered by React Router",
+      "To manage component lifecycle events",
+      "To define CSS styles for components"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 30,
+    "question": "What is the purpose of the useParams() hook in React Router?",
+    "code": "",
+    "answers": [
+      "To access route parameters in functional components",
+      "To manage global state in React applications",
+      "To handle asynchronous operations",
+      "To define CSS styles for components"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 31,
+    "question": "What is the purpose of the Route component in React Router?",
+    "code": "",
+    "answers": [
+      "To define CSS styles for components",
+      "To manage navigation history",
+      "To render UI based on the current URL",
+      "To fetch data from an API"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 32,
+    "question": "What is the purpose of the Link component in React Router?",
+    "code": "",
+    "answers": [
+      "To define CSS styles for components",
+      "To handle user authentication",
+      "To manage navigation between different pages in a React application",
+      "To create memoized components"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 33,
+    "question": "What is the purpose of the useParams() hook in React Router?",
+    "code": "",
+    "answers": [
+      "To fetch data from an API",
+      "To handle user authentication",
+      "To access route parameters in functional components",
+      "To define CSS styles for components"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 34,
+    "question": "What is the purpose of React context?",
+    "code": "",
+    "answers": [
+      "To manage state in functional components",
+      "To handle asynchronous operations",
+      "To pass data through the component tree without having to pass props down manually at every level",
+      "To create reusable components"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 35,
+    "question": "What is the purpose of the useContext() hook in React?",
+    "code": "",
+    "answers": [
+      "To access context values in functional components",
+      "To fetch data from an API",
+      "To handle user authentication",
+      "To manage state in functional components"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 36,
+    "question": "What is the purpose of the useReducer() hook in React?",
+    "code": "",
+    "answers": [
+      "To perform server-side rendering",
+      "To manage component state",
+      "To handle asynchronous operations",
+      "To define CSS styles for components"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 37,
+    "question": "What is the purpose of React.memo()?",
+    "code": "",
+    "answers": [
+      "To create memoized components for improved performance",
+      "To memoize expensive function calls",
+      "To manage state in functional components",
+      "To define CSS styles for components"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 38,
+    "question": "What is the purpose of the useEffect() hook in React?",
+    "code": "",
+    "answers": [
+      "To manage component state",
+      "To handle user authentication",
+      "To define CSS styles for components",
+      "To perform side effects in functional components"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": 39,
+    "question": "What is the purpose of the useLayoutEffect() hook in React?",
+    "code": "",
+    "answers": [
+      "To define CSS styles for components",
+      "To manage component state",
+      "To perform side effects in functional components",
+      "To handle user authentication"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 40,
+    "question": "What is the purpose of the useRef() hook in React?",
+    "code": "",
+    "answers": [
+      "To reference DOM elements or React elements",
+      "To fetch data from an API",
+      "To handle user authentication",
+      "To manage global state in React applications"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 41,
+    "question": "What is the purpose of the useMemo() hook in React?",
+    "code": "",
+    "answers": [
+      "To memoize expensive function calls",
+      "To manage component state",
+      "To perform side effects in functional components",
+      "To handle user authentication"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 42,
+    "question": "What is the purpose of the useCallback() hook in React?",
+    "code": "",
+    "answers": [
+      "To memoize expensive function calls",
+      "To manage component state",
+      "To handle user authentication",
+      "To fetch data from an API"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 43,
+    "question": "What is the purpose of the useImperativeHandle() hook in React?",
+    "code": "",
+    "answers": [
+      "To define CSS styles for components",
+      "To handle user authentication",
+      "To manage component state",
+      "To customize the instance value that is exposed by a React functional component when used with React.forwardRef"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": 44,
+    "question": "What is the purpose of the useDebugValue() hook in React?",
+    "code": "",
+    "answers": [
+      "To define CSS styles for components",
+      "To handle user authentication",
+      "To manage component state",
+      "To display custom labels for custom hooks in React DevTools"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": 45,
+    "question": "What is the purpose of the useReducer() hook in React?",
+    "code": "",
+    "answers": [
+      "To manage component state",
+      "To perform server-side rendering",
+      "To handle user authentication",
+      "To define CSS styles for components"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 46,
+    "question": "What is the purpose of the useLayoutEffect() hook in React?",
+    "code": "",
+    "answers": [
+      "To perform side effects in functional components",
+      "To manage component state",
+      "To define CSS styles for components",
+      "To handle user authentication"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 47,
+    "question": "What is the purpose of the useImperativeHandle() hook in React?",
+    "code": "",
+    "answers": [
+      "To customize the instance value that is exposed by a React functional component when used with React.forwardRef",
+      "To define CSS styles for components",
+      "To handle user authentication",
+      "To manage component state"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 48,
+    "question": "What is the purpose of the useDebugValue() hook in React?",
+    "code": "",
+    "answers": [
+      "To display custom labels for custom hooks in React DevTools",
+      "To define CSS styles for components",
+      "To handle user authentication",
+      "To manage component state"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 49,
+    "question": "What is the purpose of the useLayoutEffect() hook in React?",
+    "code": "",
+    "answers": [
+      "To define CSS styles for components",
+      "To handle user authentication",
+      "To manage component state",
+      "To perform side effects in functional components"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": 50,
+    "question": "What is the purpose of the useMemo() hook in React?",
+    "code": "",
+    "answers": [
+      "To memoize expensive function calls",
+      "To manage component state",
+      "To handle user authentication",
+      "To define CSS styles for components"
+    ],
+    "correctAnswer": 0
+  }
+]

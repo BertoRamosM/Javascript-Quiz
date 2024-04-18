@@ -22,7 +22,7 @@ const Start = () => {
     <>
       {quizzes.map((quiz, index) => {
         return (
-          <Button onClick={()=>handleClick(quiz)} variant="contained" key={index}>
+          <Button onClick={()=>handleClick(quiz)} variant="contained" key={index} style={{marginLeft: '1.5rem'}}>
             {quiz}
           </Button>
         );
