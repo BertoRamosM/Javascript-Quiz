@@ -1,10 +1,10 @@
 
-const ReactLogo = () => {
+const ReactLogo = ({ width, height }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width={48}
-      height={48}
+      width={width}
+      height={height}
       viewBox="175.7 78 490.6 436.9"
     >
       <g fill="#61dafb">
@@ -13,6 +13,6 @@ const ReactLogo = () => {
       </g>
     </svg>
   );
-}
+};
 
 export default ReactLogo

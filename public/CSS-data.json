@@ -1,0 +1,434 @@
+[
+  {
+    "id": 1,
+    "question": "What does CSS stand for?",
+    "code": "",
+    "answers": [
+      "Cascading Style Sheets",
+      "Creative Style Syntax",
+      "Computer Style System",
+      "Cascading Script Styles"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 2,
+    "question": "Which CSS property is used to control the size of text?",
+    "code": "",
+    "answers": ["font-size", "text-size", "size", "font-style"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 3,
+    "question": "What is the default value of the 'position' property in CSS?",
+    "code": "",
+    "answers": ["static", "relative", "absolute", "fixed"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 4,
+    "question": "Which CSS property is used to change the background color of an element?",
+    "code": "",
+    "answers": ["background-color", "color", "background", "bg-color"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 5,
+    "question": "What is the correct CSS syntax for making all the <p> elements bold?",
+    "code": "",
+    "answers": [
+      "p { font-weight: bold; }",
+      "<p> { font-weight: bold; }",
+      "<p style='font-weight: bold;'>",
+      "p { text-style: bold; }"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 6,
+    "question": "Which CSS property is used to change the text color of an element?",
+    "code": "",
+    "answers": ["color", "text-color", "font-color", "foreground-color"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 7,
+    "question": "In CSS, which property is used to control the spacing between lines of text?",
+    "code": "",
+    "answers": ["line-height", "text-spacing", "line-spacing", "spacing"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 8,
+    "question": "What is the CSS syntax to select an element with id 'myElement'?",
+    "code": "#myElement { }",
+    "answers": [
+      ".myElement { }",
+      "element.myElement { }",
+      "element#myElement { }",
+      "myElement { }"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 9,
+    "question": "How can you center an element horizontally in CSS?",
+    "code": "",
+    "answers": [
+      "margin: 0 auto;",
+      "align: center;",
+      "text-align: center;",
+      "position: absolute; left: 50%;"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 10,
+    "question": "Which CSS property is used to add shadow effects to elements?",
+    "code": "",
+    "answers": ["box-shadow", "shadow", "text-shadow", "effect-shadow"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 11,
+    "question": "What is the CSS property used to specify the space between the content and its border?",
+    "code": "",
+    "answers": ["padding", "margin", "border", "spacing"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 12,
+    "question": "How do you apply a background image to an element in CSS?",
+    "code": "",
+    "answers": [
+      "background-image: url('image.jpg');",
+      "image: url('image.jpg');",
+      "background: image('image.jpg');",
+      "img: url('image.jpg');"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 13,
+    "question": "What is the correct CSS syntax for making all the <h1> elements green?",
+    "code": "",
+    "answers": [
+      "h1 { color: green; }",
+      "<h1> { color: green; }",
+      "<h1 style='color: green;'>",
+      "h1 { text-color: green; }"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 14,
+    "question": "How can you make a list of items display horizontally instead of vertically?",
+    "code": "",
+    "answers": [
+      "display: inline;",
+      "display: block;",
+      "display: inline-block;",
+      "display: flex;"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 15,
+    "question": "What is the CSS property used to control the transparency of an element?",
+    "code": "",
+    "answers": ["opacity", "transparent", "visibility", "transparency"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 16,
+    "question": "How do you include comments in CSS?",
+    "code": "",
+    "answers": [
+      "/* This is a comment */",
+      "// This is a comment",
+      "<!-- This is a comment -->",
+      "# This is a comment"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 17,
+    "question": "What is the CSS property used to specify the font family of text?",
+    "code": "",
+    "answers": ["font-family", "text-font", "font", "family"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 18,
+    "question": "How do you make an element float to the right in CSS?",
+    "code": "",
+    "answers": [
+      "float: right;",
+      "align: right;",
+      "position: right;",
+      "right: 0;"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 19,
+    "question": "What is the CSS property used to control the size of an element relative to its parent?",
+    "code": "",
+    "answers": ["width", "size", "relative-size", "scale"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 20,
+    "question": "What is the CSS property used to control the order of elements in a flex container?",
+    "code": "",
+    "answers": ["order", "flex-order", "position", "flex-position"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 21,
+    "question": "What does the 'display: none;' property do in CSS?",
+    "code": "",
+    "answers": ["Hides the element completely", "Makes the element partially transparent", "Enlarges the element", "Changes the element's position"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 22,
+    "question": "Which CSS property is used to add rounded corners to an element?",
+    "code": "",
+    "answers": ["border-radius", "corner-radius", "rounded-corners", "border-style"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 23,
+    "question": "What is the default value of the 'display' property in CSS?",
+    "code": "",
+    "answers": ["inline", "block", "none", "flex"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 24,
+    "question": "What is the CSS property used to control the spacing between elements?",
+    "code": "",
+    "answers": ["margin", "padding", "spacing", "gap"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 25,
+    "question": "What is the CSS property used to specify the thickness of the border?",
+    "code": "",
+    "answers": ["border-width", "border-thickness", "border-size", "border"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 26,
+    "question": "What is the CSS property used to make text italic?",
+    "code": "",
+    "answers": ["font-style", "italic", "font-italic", "style"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 27,
+    "question": "Which CSS property is used to specify the space between columns in a multi-column layout?",
+    "code": "",
+    "answers": ["column-gap", "gap", "column-space", "spacing"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 28,
+    "question": "How do you select all <p> elements inside a <div> element with the class 'container'?",
+    "code": ".container p { }",
+    "answers": ["div.container p { }", "p.container { }", "#container p { }", ".container > p { }"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 29,
+    "question": "Which CSS property is used to specify the style of the border?",
+    "code": "",
+    "answers": ["border-style", "border", "style", "border-design"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 30,
+    "question": "What is the CSS property used to specify the alignment of text?",
+    "code": "",
+    "answers": ["text-align", "alignment", "align", "text-style"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 31,
+    "question": "How do you make an element stay at the top of the page, even when scrolling?",
+    "code": "",
+    "answers": ["position: fixed;", "position: sticky;", "position: absolute; top: 0;", "position: top;"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 32,
+    "question": "What is the CSS property used to control the visibility of an element?",
+    "code": "",
+    "answers": ["visibility", "display", "visible", "show"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 33,
+    "question": "Which CSS property is used to specify the size of an element?",
+    "code": "",
+    "answers": ["width", "size", "height", "dimension"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 34,
+    "question": "What is the CSS property used to specify the color of the text decoration?",
+    "code": "",
+    "answers": ["text-decoration-color", "decoration-color", "text-color", "color"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 35,
+    "question": "How do you align text vertically within its container?",
+    "code": "",
+    "answers": ["vertical-align", "align", "text-align", "center"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 36,
+    "question": "What is the CSS property used to control the order of elements when using flexbox?",
+    "code": "",
+    "answers": ["order", "flex-order", "position", "flex-position"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 37,
+    "question": "What is the CSS property used to specify the direction of the flexible items?",
+    "code": "",
+    "answers": ["flex-direction", "direction", "order", "flex-items"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 38,
+    "question": "How do you select all elements with the class 'box'?",
+    "code": ".box { }",
+    "answers": ["box { }", "#box { }", ".box {}", "box {}"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 39,
+    "question": "Which CSS property is used to add shadows to text?",
+    "code": "",
+    "answers": ["text-shadow", "shadow", "font-shadow", "text-effect"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 40,
+    "question": "What is the CSS property used to specify the spacing between letters in text?",
+    "code": "",
+    "answers": ["letter-spacing", "spacing", "word-spacing", "text-spacing"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 41,
+    "question": "How do you make an element take up the full width of its parent?",
+    "code": "",
+    "answers": ["width: 100%;", "width: auto;", "width: inherit;", "width: full;"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 42,
+    "question": "What is the CSS property used to specify the position of an element?",
+    "code": "",
+    "answers": ["position", "placement", "location", "top"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 43,
+    "question": "How do you select all links with the class 'active'?",
+    "code": "a.active { }",
+    "answers": ["a:active { }", ".active a { }", "#active a { }", "a { active: true; }"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 44,
+    "question": "What is the CSS property used to specify the font weight of text?",
+    "code": "",
+    "answers": ["font-weight", "weight", "font-style", "bold"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 45,
+    "question": "Which CSS property is used to add a transition effect to an element?",
+    "code": "",
+    "answers": ["transition", "animation", "transform", "transition-effect"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 46,
+    "question": "What is the CSS property used to specify the behavior of an element's background image?",
+    "code": "",
+    "answers": ["background-repeat", "image-repeat", "background-style", "repeat"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 47,
+    "question": "How do you make the text of an element bold?",
+    "code": "",
+    "answers": ["font-weight: bold;", "bold: true;", "text-style: bold;", "font: bold;"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 48,
+    "question": "What is the CSS property used to specify the spacing between words in text?",
+    "code": "",
+    "answers": ["word-spacing", "spacing", "letter-spacing", "text-spacing"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 49,
+    "question": "Which CSS property is used to specify the position of the background image?",
+    "code": "",
+    "answers": ["background-position", "image-position", "position", "background-align"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 50,
+    "question": "How do you make an element take up half the width of its parent?",
+    "code": "",
+    "answers": ["width: 50%;", "width: auto;", "width: half;", "width: 100%;"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 51,
+    "question": "What is the CSS property used to specify the indentation of the first line of text?",
+    "code": "",
+    "answers": ["text-indent", "indent", "first-line-indent", "line-indent"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 52,
+    "question": "How do you make an element's border dashed?",
+    "code": "",
+    "answers": ["border-style: dashed;", "border-type: dashed;", "border: dashed;", "style: dashed;"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 53,
+    "question": "What is the CSS property used to specify the background color of an element?",
+    "code": "",
+    "answers": ["background-color", "color", "bg-color", "background"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 54,
+    "question": "How do you make an element invisible but still take up space in the layout?",
+    "code": "",
+    "answers": ["visibility: hidden;", "display: none;", "opacity: 0;", "invisible: true;"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 55,
+    "question": "What is the CSS property used to specify the position of the text decoration?",
+    "code": "",
+    "answers": ["text-decoration-position", "decoration-position", "position", "text-align"],
+    "correctAnswer": 0
+  }
+]
+
+

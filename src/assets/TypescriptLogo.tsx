@@ -1,11 +1,11 @@
 
-const TypescriptLogo = () => {
+const TypescriptLogo = ({ width, height }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      height="48"
+      height={height}
       viewBox="0 0 640 640"
-      width="48"
+      width={width}
     >
       <path d="m0 0h640v640h-640z" fill="#017acb" />
       <path
@@ -14,6 +14,6 @@ const TypescriptLogo = () => {
       />
     </svg>
   );
-}
+};
 
 export default TypescriptLogo

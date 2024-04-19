@@ -65,7 +65,7 @@ const Footer = () => {
           <Typography id="modal-title" variant="h5" component="h2" gutterBottom>
             <span>{`Finished!`}</span> <br />
             <span style={{ color: "lightgreen" }}>{correct}</span>
-            {` correct and`} <span style={{ color: "red" }}>{incorrect}</span>{" "}
+            {` correct and`} <span style={{ color: "crimson" }}>{incorrect}</span>{" "}
             {`incorrect`}
             <br />
             <span style={{ fontSize: "20px" }}>{getSentance()}</span>

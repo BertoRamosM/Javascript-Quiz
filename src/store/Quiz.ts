@@ -7,14 +7,11 @@ interface QuizState {
 }
 
 export const useQuiz = create<QuizState>(
-  persist(
+  
     (set) => ({
       currentQuiz: undefined,
-      quizzes: ["javascript", "react", "typescript"],
+      quizzes: ["javascript", "react", "typescript", "CSS"],
       changeQuiz: (q: string) => set((state) => ({ ...state, currentQuiz: q })),
     }),
-    {
-      name: "quiz",
-    }
-  )
+   
 );
