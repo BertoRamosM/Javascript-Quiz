@@ -13,6 +13,7 @@ fetchQuestions: (limit: number, currentQuiz: string) => Promise<void>;
   goNextQuestion: () => void;
   goPreviousQuestion: () => void;
   reset: () => void;
+  
 }
 
 const API_URL = "http://localhost:5174/";

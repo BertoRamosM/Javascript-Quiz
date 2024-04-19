@@ -4,6 +4,7 @@ import { persist } from "zustand/middleware";
 interface QuizState {
   currentQuiz: string | undefined;
   quizzes: string[];
+  changeQuiz: () => void;
 }
 
 export const useQuiz = create<QuizState>(

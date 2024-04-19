@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Button, Modal, Box, Typography } from "@mui/material";
 import { useQuestionData } from "./hooks/useQuestionData";
 import { useQuestionsStore } from "./store/questions";
@@ -10,7 +10,7 @@ const Footer = () => {
   const reset = useQuestionsStore((state) => state.reset);
   const [showModal, setShowModal] = useState(false);
   
-  const getSentance = (correct) => {
+  const getSentance = (correct: number) => {
     if (correct === 0)
       return "Well, you certainly nailed it... oh wait. Oh, nevermind, that's just the sound of your hopes and dreams being buried.";
     if (correct === 1)
