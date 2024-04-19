@@ -10,6 +10,7 @@ import JavascriptLogo from "./assets/JavascriptLogo";
 import ReactLogo from "./assets/ReactLogo";
 import TypescriptLogo from "./assets/TypescriptLogo";
 import CSSLogo from "./assets/CSSLogo";
+import NodeJsLogo from "./assets/NodeJsLogo";
 
 function App() {
   const currentQuiz = useQuiz((state) => state.currentQuiz);
@@ -34,6 +35,8 @@ function App() {
               <TypescriptLogo width={88} height={88} />
             )}
             {currentQuiz === "CSS" && <CSSLogo width={88} height={88} />}
+            {currentQuiz === "nodejs" && <NodeJsLogo width={88} height={88} />}
+
             <img src={QuizzLogo} style={{ height: "160px" }}></img>
             {currentQuiz === undefined && <h6>Select a quiz:</h6>}
           </Typography>

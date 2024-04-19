@@ -6,38 +6,38 @@ import JavascriptLogo from "../JavascriptLogo";
 import ReactLogo from "../ReactLogo";
 import TypescriptLogo from "../TypescriptLogo";
 import CSSLogo from "../CSSLogo";
+import NodeJsLogo from "../NodeJsLogo";
 
 const LIMIT_QUESTIONS = 10;
 
 const Start = () => {
-  const quizzes = useQuiz((state) => state.quizzes)
+  const quizzes = useQuiz((state) => state.quizzes);
   const changeQuiz = useQuiz((state) => state.changeQuiz);
-  
 
   const logoSize = {
     width: 30,
-    height: 25
-  }
+    height: 25,
+  };
 
-   const logos = {
-     javascript: (
-       <JavascriptLogo width={logoSize.width} height={logoSize.height} />
-     ),
-     react: <ReactLogo width={logoSize.width} height={logoSize.height} />,
-     typescript: (
-       <TypescriptLogo width={logoSize.width} height={logoSize.height} />
-     ),
-     CSS: <CSSLogo width={logoSize.width} height={logoSize.height} />,
-   };
-  
+  const logos = {
+    javascript: (
+      <JavascriptLogo width={logoSize.width} height={logoSize.height} />
+    ),
+    react: <ReactLogo width={logoSize.width} height={logoSize.height} />,
+    typescript: (
+      <TypescriptLogo width={logoSize.width} height={logoSize.height} />
+    ),
+    CSS: <CSSLogo width={logoSize.width} height={logoSize.height} />,
+
+    nodejs: <NodeJsLogo width={logoSize.width} height={logoSize.height} />,
+  };
+
   const fetchQuestions = useQuestionsStore((state) => state.fetchQuestions);
 
   const handleClick = (quiz: string) => {
     fetchQuestions(LIMIT_QUESTIONS, quiz);
-    changeQuiz(quiz)
+    changeQuiz(quiz);
   };
-
-  
 
   return (
     <Container>
@@ -55,6 +55,7 @@ const Start = () => {
               style={{
                 display: "flex",
                 alignItems: "center",
+                justifyContent: " center",
                 gap: "0.5rem",
               }}
             >

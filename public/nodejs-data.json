@@ -1,0 +1,434 @@
+[
+  {
+    "id": 11,
+    "question": "What is the purpose of the 'http.createServer()' method in Node.js?",
+    "code": "const http = require('http');\n\nconst server = http.createServer((req, res) => {\n  // request handling logic\n});",
+    "answers": [
+      "To create a new HTTP server instance",
+      "To handle incoming HTTP requests",
+      "To parse the URL of incoming requests",
+      "To send HTTP responses to clients"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 12,
+    "question": "Which of the following is true about the 'req' object in a Node.js HTTP server?",
+    "code": "const http = require('http');\n\nconst server = http.createServer((req, res) => {\n  // request handling logic\n});",
+    "answers": [
+      "It represents the response sent by the server",
+      "It contains information about the client's request",
+      "It handles routing for incoming requests",
+      "It defines the content type of the response"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 13,
+    "question": "Which method is used to handle incoming HTTP requests in a Node.js HTTP server?",
+    "code": "const http = require('http');\n\nconst server = http.createServer((req, res) => {\n  // request handling logic\n});",
+    "answers": ["handleRequest", "listen", "on", "createServer"],
+    "correctAnswer": 3
+  },
+  {
+    "id": 14,
+    "question": "What is the purpose of the 'req.method' property in a Node.js HTTP server request object?",
+    "code": "const http = require('http');\n\nconst server = http.createServer((req, res) => {\n  // request handling logic\n});",
+    "answers": [
+      "To store the request URL",
+      "To store the request body",
+      "To store the request method (e.g., GET, POST)",
+      "To store request headers"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 15,
+    "question": "What is the purpose of the 'res.writeHead()' method in a Node.js HTTP server response object?",
+    "code": "const http = require('http');\n\nconst server = http.createServer((req, res) => {\n  // request handling logic\n});",
+    "answers": [
+      "To send a response with the specified status code and headers",
+      "To send data in the response body",
+      "To close the HTTP connection",
+      "To handle incoming HTTP requests"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 16,
+    "question": "Which method is used to start a Node.js HTTP server listening for incoming requests?",
+    "code": "const http = require('http');\n\nconst server = http.createServer((req, res) => {\n  // request handling logic\n});",
+    "answers": ["handleRequest", "listen", "on", "createServer"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 17,
+    "question": "What is the purpose of the 'res.end()' method in a Node.js HTTP server response object?",
+    "code": "const http = require('http');\n\nconst server = http.createServer((req, res) => {\n  // request handling logic\n});",
+    "answers": [
+      "To send a response with the specified status code and headers",
+      "To send data in the response body",
+      "To close the HTTP connection",
+      "To handle incoming HTTP requests"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 18,
+    "question": "What is the purpose of the 'req.url' property in a Node.js HTTP server request object?",
+    "code": "const http = require('http');\n\nconst server = http.createServer((req, res) => {\n  // request handling logic\n});",
+    "answers": [
+      "To store the request method (e.g., GET, POST)",
+      "To store the request body",
+      "To store the request URL",
+      "To store request headers"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 19,
+    "question": "Which of the following modules is commonly used for routing in a Node.js web application?",
+    "code": "const express = require('express');",
+    "answers": ["http", "body-parser", "express", "url"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 20,
+    "question": "What is the purpose of the 'res.send()' method in a Node.js HTTP server response object?",
+    "code": "const express = require('express');\nconst app = express();",
+    "answers": [
+      "To send a response with the specified status code and headers",
+      "To send data in the response body",
+      "To close the HTTP connection",
+      "To handle incoming HTTP requests"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 21,
+    "question": "What is the purpose of the 'express.static()' middleware in an Express.js application?",
+    "code": "const express = require('express');\nconst app = express();",
+    "answers": [
+      "To serve static files such as HTML, CSS, and JavaScript",
+      "To parse request bodies in JSON format",
+      "To handle URL routing",
+      "To create a new HTTP server instance"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 22,
+    "question": "Which of the following HTTP methods is commonly used for retrieving data in a RESTful API?",
+    "code": "",
+    "answers": ["GET", "POST", "PUT", "DELETE"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 23,
+    "question": "What is the purpose of the 'req.params' property in an Express.js application?",
+    "code": "",
+    "answers": [
+      "To store URL parameters from the request URL",
+      "To store the request method (e.g., GET, POST)",
+      "To store the headers of the incoming request",
+      "To store query parameters from the request URL"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 24,
+    "question": "Which of the following modules is commonly used for handling HTTP requests in an Express.js application?",
+    "code": "",
+    "answers": ["http", "body-parser", "express", "url"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 25,
+    "question": "What is the purpose of the 'next()' function in Express.js middleware?",
+    "code": "",
+    "answers": [
+      "To terminate the middleware chain and send a response",
+      "To pass control to the next middleware function in the chain",
+      "To handle errors thrown by previous middleware functions",
+      "To handle incoming HTTP requests"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 26,
+    "question": "What is the purpose of the 'req.body' property in an Express.js application?",
+    "code": "",
+    "answers": [
+      "To store URL parameters from the request URL",
+      "To store the request method (e.g., GET, POST)",
+      "To store the request body data",
+      "To store query parameters from the request URL"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 27,
+    "question": "What is the purpose of the 'res.json()' method in an Express.js application?",
+    "code": "",
+    "answers": [
+      "To send a JSON response to the client",
+      "To send a plain text response to the client",
+      "To send an HTML response to the client",
+      "To handle incoming HTTP requests"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 28,
+    "question": "Which of the following is true about the 'req.query' property in an Express.js application?",
+    "code": "",
+    "answers": [
+      "It represents the response sent by the server",
+      "It contains information about the client's request",
+      "It stores URL parameters from the request URL",
+      "It stores query parameters from the request URL"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": 29,
+    "question": "What is the purpose of the 'res.sendFile()' method in an Express.js application?",
+    "code": "",
+    "answers": [
+      "To send a file as a response to the client",
+      "To send a JSON response to the client",
+      "To send a plain text response to the client",
+      "To handle incoming HTTP requests"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 30,
+    "question": "What is the purpose of the 'app.use()' method in an Express.js application?",
+    "code": "",
+    "answers": [
+      "To define middleware functions that execute for every request",
+      "To define route handlers for specific HTTP methods",
+      "To create a new route in the application",
+      "To start the Express.js application"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 31,
+    "question": "Which method in the 'fs' module is used to write files asynchronously in Node.js?",
+    "code": "",
+    "answers": ["writeFile", "writeFileSync", "write", "open"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 32,
+    "question": "What is the purpose of the 'req.query' property in a Node.js HTTP server request object?",
+    "code": "",
+    "answers": [
+      "To store URL parameters from the request URL",
+      "To store the request method (e.g., GET, POST)",
+      "To store the headers of the incoming request",
+      "To store query parameters from the request URL"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "id": 33,
+    "question": "Which of the following is true about the 'res.redirect()' method in a Node.js HTTP server?",
+    "code": "",
+    "answers": [
+      "It sends a redirect response to the client",
+      "It sends a JSON response to the client",
+      "It closes the HTTP connection",
+      "It handles incoming HTTP requests"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 34,
+    "question": "What is the purpose of the 'res.status()' method in a Node.js HTTP server?",
+    "code": "",
+    "answers": [
+      "To set the status code of the response",
+      "To send data in the response body",
+      "To close the HTTP connection",
+      "To handle incoming HTTP requests"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 35,
+    "question": "Which module is commonly used for parsing request body data in a Node.js web application?",
+    "code": "",
+    "answers": ["http", "body-parser", "express", "url"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 36,
+    "question": "What is the purpose of the 'res.clearCookie()' method in a Node.js HTTP server?",
+    "code": "",
+    "answers": [
+      "To send a response with the specified data and headers",
+      "To close the HTTP connection",
+      "To clear a cookie in the client's browser",
+      "To handle incoming HTTP requests"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 37,
+    "question": "What is the purpose of the 'req.cookies' property in a Node.js HTTP server request object?",
+    "code": "",
+    "answers": [
+      "To store URL parameters from the request URL",
+      "To store cookies sent by the client",
+      "To store the request method (e.g., GET, POST)",
+      "To store query parameters from the request URL"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 38,
+    "question": "Which of the following is true about middleware in Express.js?",
+    "code": "",
+    "answers": [
+      "Middleware functions can access the request and response objects",
+      "Middleware functions are only used for error handling",
+      "Middleware functions can only be defined in separate files",
+      "Middleware functions are not supported in Express.js"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 39,
+    "question": "What is the purpose of the 'req.originalUrl' property in an Express.js application?",
+    "code": "",
+    "answers": [
+      "To store the original URL of the request",
+      "To store the current URL of the request",
+      "To store the response data sent by the server",
+      "To store query parameters from the request URL"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 40,
+    "question": "Which method is used to handle HTTP POST requests in an Express.js application?",
+    "code": "",
+    "answers": ["app.post()", "app.get()", "app.delete()", "app.put()"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 41,
+    "question": "What is the purpose of the 'req.headers' property in a Node.js HTTP server request object?",
+    "code": "",
+    "answers": [
+      "To store URL parameters from the request URL",
+      "To store the request method (e.g., GET, POST)",
+      "To store the headers of the incoming request",
+      "To store query parameters from the request URL"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 42,
+    "question": "What is the purpose of the 'req.ip' property in an Express.js application?",
+    "code": "",
+    "answers": [
+      "To store the IP address of the server",
+      "To store the IP address of the client",
+      "To store the request method (e.g., GET, POST)",
+      "To store the request URL"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 43,
+    "question": "Which module is commonly used for session management in an Express.js application?",
+    "code": "",
+    "answers": ["express-session", "cookie-parser", "body-parser", "mongoose"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 44,
+    "question": "What is the purpose of the 'res.set()' method in an Express.js application?",
+    "code": "",
+    "answers": [
+      "To set response headers",
+      "To send a response with the specified status code and headers",
+      "To send data in the response body",
+      "To handle incoming HTTP requests"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 45,
+    "question": "Which of the following is true about Express.js middleware?",
+    "code": "",
+    "answers": [
+      "Middleware functions can access the request and response objects",
+      "Middleware functions are only used for routing",
+      "Middleware functions can only be defined in separate files",
+      "Middleware functions are not supported in Express.js"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 46,
+    "question": "What is the purpose of the 'req.protocol' property in an Express.js application?",
+    "code": "",
+    "answers": [
+      "To store the protocol of the request (e.g., HTTP, HTTPS)",
+      "To store the IP address of the client",
+      "To store the request method (e.g., GET, POST)",
+      "To store the request URL"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 47,
+    "question": "What is the purpose of the 'req.route' property in an Express.js application?",
+    "code": "",
+    "answers": [
+      "To store URL parameters from the request URL",
+      "To store the current route of the request",
+      "To store the response data sent by the server",
+      "To store query parameters from the request URL"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 48,
+    "question": "Which module is commonly used for authentication in an Express.js application?",
+    "code": "",
+    "answers": ["passport", "body-parser", "express-session", "cookie-parser"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 49,
+    "question": "What is the purpose of the 'res.type()' method in an Express.js application?",
+    "code": "",
+    "answers": [
+      "To set the content type of the response",
+      "To send a response with the specified status code and headers",
+      "To send data in the response body",
+      "To handle incoming HTTP requests"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 50,
+    "question": "What is the purpose of the 'req.signedCookies' property in an Express.js application?",
+    "code": "",
+    "answers": [
+      "To store URL parameters from the request URL",
+      "To store cookies sent by the client",
+      "To store the request method (e.g., GET, POST)",
+      "To store query parameters from the request URL"
+    ],
+    "correctAnswer": 1
+  }
+]
+
+

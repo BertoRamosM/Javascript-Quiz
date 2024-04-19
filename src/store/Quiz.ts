@@ -10,7 +10,7 @@ export const useQuiz = create<QuizState>(
   persist(
     (set) => ({
       currentQuiz: undefined,
-      quizzes: ["javascript", "react", "typescript", "CSS"],
+      quizzes: ["javascript", "react", "typescript", "CSS", "nodejs"],
       changeQuiz: (q: string) => set((state) => ({ ...state, currentQuiz: q })),
     }),
     {
