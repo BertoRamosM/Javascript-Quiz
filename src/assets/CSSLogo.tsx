@@ -1,5 +1,5 @@
-
-const CSSLogo = ({width, height}) => {
+import { LogoProps } from "../types";
+const CSSLogo: React.FC<LogoProps> = ({ width, height }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -22,6 +22,6 @@ const CSSLogo = ({width, height}) => {
       />
     </svg>
   );
-}
+};
 
 export default CSSLogo
