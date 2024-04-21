@@ -8,6 +8,10 @@ import TypescriptLogo from "../TypescriptLogo";
 import CSSLogo from "../CSSLogo";
 import NodeJsLogo from "../NodeJsLogo";
 
+type LogoType = {
+  [key: string]: JSX.Element; 
+};
+
 const LIMIT_QUESTIONS = 10;
 
 const Start = () => {
@@ -19,7 +23,7 @@ const Start = () => {
     height: 25,
   };
 
-  const logos = {
+  const logos: LogoType = {
     javascript: (
       <JavascriptLogo width={logoSize.width} height={logoSize.height} />
     ),

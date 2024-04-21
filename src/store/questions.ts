@@ -1,6 +1,5 @@
 import { create } from "zustand";
 import { type Question } from "../types";
-import confetti from "canvas-confetti";
 import { persist, devtools } from "zustand/middleware";
 import { useQuiz } from "./Quiz"; 
 
@@ -53,7 +52,6 @@ export const useQuestionsStore = create<State>()(
             const isCorrectUserAnswer =
               questionInfo.correctAnswer === answerIndex;
 
-            if (isCorrectUserAnswer) confetti();
 
             // cambiar esta información en la copia de la pregunta
             newQuestions[questionIndex] = {
@@ -88,7 +86,7 @@ export const useQuestionsStore = create<State>()(
           },
 
           reset: () => {
-             useQuiz.getState().changeQuiz(undefined);
+             useQuiz.getState().changeQuiz("");
             set({ currentQuestion: 0, questions: [] }, false, "RESET");
           },
         };
