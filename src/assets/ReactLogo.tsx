@@ -1,5 +1,6 @@
+import { LogoProps } from "../types";
 
-const ReactLogo = ({ width, height }) => {
+const ReactLogo: React.FC<LogoProps> = ({ width, height }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -15,4 +16,4 @@ const ReactLogo = ({ width, height }) => {
   );
 };
 
-export default ReactLogo
+export default ReactLogo;

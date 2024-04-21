@@ -1,5 +1,5 @@
-
-const JavascriptLogo = ({ width, height }) => {
+import { LogoProps } from "../types";
+const JavascriptLogo: React.FC<LogoProps> = ({ width, height }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"

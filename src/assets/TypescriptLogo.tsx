@@ -1,5 +1,6 @@
 
-const TypescriptLogo = ({ width, height }) => {
+import { LogoProps } from "../types";
+const TypescriptLogo: React.FC<LogoProps> = ({ width, height }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"

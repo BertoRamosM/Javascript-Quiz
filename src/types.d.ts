@@ -7,3 +7,8 @@ export interface Question {
   userSelectedAnswer?: number;
   isCorrectUserAnswer?: boolean;
 }
+
+export interface LogoProps {
+  width: number;
+  height: number;
+}
