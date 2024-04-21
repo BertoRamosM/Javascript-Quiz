@@ -15,7 +15,7 @@ fetchQuestions: (limit: number, currentQuiz: string) => Promise<void>;
   
 }
 
-const API_URL = "http://localhost:5174/";
+
 
 export const useQuestionsStore = create<State>()(
   devtools(
@@ -29,7 +29,9 @@ export const useQuestionsStore = create<State>()(
 
           fetchQuestions: async (limit: number, currentQuiz: string) => {
              if (!currentQuiz) return;
-            const res = await fetch(`${API_URL}/${currentQuiz}-data.json`);
+            const res = await fetch(
+              `https://bertoramosm.github.io/Quizzo_api/${currentQuiz}-data.json`
+            );
             const json = await res.json();
 
             const questions = json
