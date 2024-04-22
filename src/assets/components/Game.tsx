@@ -40,12 +40,12 @@ const getBackgroundColor = (info: QuestionType, index: number) => {
 const Question = ({ info }: { info: QuestionType }) => {
   const selectAnswers = useQuestionsStore((state) => state.selectAnswer);
 
-  //we call here the callback function check the second (), then in the button we dont need to pass it
   const handleClick = (answerIndex: number) => () => {
     selectAnswers(info.id, answerIndex);
   };
 
   const isSmallScreen = useMediaQuery("(max-width:600px)");
+  const isExtraSmallScreen = useMediaQuery("(max-width:400px)");
 
   return (
     <Card
@@ -56,16 +56,20 @@ const Question = ({ info }: { info: QuestionType }) => {
         p: 2,
         marginTop: 4,
         overflow: "auto",
-        maxHeight: isSmallScreen ? "70vh" : "none", 
-        width: isSmallScreen ? "90%" : "auto", 
-        margin: isSmallScreen ? "auto" : "inherit", 
+        maxHeight: isSmallScreen ? "70vh" : "none",
+        width: isSmallScreen ? "90%" : "auto",
+        margin: isSmallScreen ? "auto" : "inherit",
+        ...(isExtraSmallScreen && {
+          padding: "1rem",
+          maxHeight: "none",
+        }), // Adjust for extra small screens
       }}
     >
-      <Typography variant="h5" color="lightBlue">
+      <Typography variant="h5" color="lightBlue" sx={{ mb: 2 }}>
         {info.question}
       </Typography>
 
-      <SyntaxHighlighter language="javascript" style={hybrid}>
+      <SyntaxHighlighter language="javascript" style={hybrid} sx={{ mb: 2 }}>
         {info.code}
       </SyntaxHighlighter>
 
