@@ -15,7 +15,7 @@ import NodeJsLogo from "./assets/NodeJsLogo";
 function App() {
   const currentQuiz = useQuiz((state) => state.currentQuiz);
   const questions = useQuestionsStore((state) => state.questions);
-
+  
   // Use useMediaQuery to detect screen size
   const isSmallScreen = useMediaQuery("(max-width:600px)");
 
@@ -30,41 +30,16 @@ function App() {
         >
           <Typography variant="h2" component="h1" color="white">
             {currentQuiz === "javascript" && (
-              <JavascriptLogo
-                width={isSmallScreen ? 44 : 88}
-                height={isSmallScreen ? 44 : 88}
-              />
+              <JavascriptLogo width={isSmallScreen ? 44 : 88} height={isSmallScreen ? 44 : 88} />
             )}
-            {currentQuiz === "react" && (
-              <ReactLogo
-                width={isSmallScreen ? 44 : 88}
-                height={isSmallScreen ? 44 : 88}
-              />
-            )}
+            {currentQuiz === "react" && <ReactLogo width={isSmallScreen ? 44 : 88} height={isSmallScreen ? 44 : 88} />}
             {currentQuiz === "typescript" && (
-              <TypescriptLogo
-                width={isSmallScreen ? 44 : 88}
-                height={isSmallScreen ? 44 : 88}
-              />
+              <TypescriptLogo width={isSmallScreen ? 44 : 88} height={isSmallScreen ? 44 : 88} />
             )}
-            {currentQuiz === "CSS" && (
-              <CSSLogo
-                width={isSmallScreen ? 44 : 88}
-                height={isSmallScreen ? 44 : 88}
-              />
-            )}
-            {currentQuiz === "nodejs" && (
-              <NodeJsLogo
-                width={isSmallScreen ? 44 : 88}
-                height={isSmallScreen ? 44 : 88}
-              />
-            )}
+            {currentQuiz === "CSS" && <CSSLogo width={isSmallScreen ? 44 : 88} height={isSmallScreen ? 44 : 88} />}
+            {currentQuiz === "nodejs" && <NodeJsLogo width={isSmallScreen ? 44 : 88} height={isSmallScreen ? 44 : 88} />}
 
-            <img
-              src={QuizzLogo}
-              style={{ height: isSmallScreen ? "100px" : "160px" }}
-              alt="Quizz Logo"
-            ></img>
+            <img src={QuizzLogo} style={{ height: isSmallScreen ? "100px" : "160px" }} alt="Quizz Logo"></img>
             {currentQuiz === undefined && <h6>Select a quiz:</h6>}
           </Typography>
         </Stack>

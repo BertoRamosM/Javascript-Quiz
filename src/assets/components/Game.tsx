@@ -1,4 +1,3 @@
-import { useMediaQuery } from "@mui/material";
 import {
   Card,
   IconButton,
@@ -40,36 +39,21 @@ const getBackgroundColor = (info: QuestionType, index: number) => {
 const Question = ({ info }: { info: QuestionType }) => {
   const selectAnswers = useQuestionsStore((state) => state.selectAnswer);
 
+  //we call here the callback function check the second (), then in the button we dont need to pass it
   const handleClick = (answerIndex: number) => () => {
     selectAnswers(info.id, answerIndex);
   };
 
-  const isSmallScreen = useMediaQuery("(max-width:600px)");
-  const isExtraSmallScreen = useMediaQuery("(max-width:400px)");
-
   return (
     <Card
       variant="outlined"
-      sx={{
-        bgcolor: "#222",
-        textAlign: "left",
-        p: 2,
-        marginTop: 4,
-        overflow: "auto",
-        maxHeight: isSmallScreen ? "70vh" : "none",
-        width: isSmallScreen ? "90%" : "auto",
-        margin: isSmallScreen ? "auto" : "inherit",
-        ...(isExtraSmallScreen && {
-          padding: "1rem",
-          maxHeight: "none",
-        }), // Adjust for extra small screens
-      }}
+      sx={{ bgcolor: "#222", textAlign: "left", p: 2, marginTop: 4 }}
     >
-      <Typography variant="h5" color="lightBlue" sx={{ mb: 2 }}>
+      <Typography variant="h5" color="lightBlue">
         {info.question}
       </Typography>
 
-      <SyntaxHighlighter language="javascript" style={hybrid} sx={{ mb: 2 }}>
+      <SyntaxHighlighter language="javascript" style={hybrid}>
         {info.code}
       </SyntaxHighlighter>
 
@@ -95,8 +79,8 @@ const Question = ({ info }: { info: QuestionType }) => {
 const Game = () => {
   const questions = useQuestionsStore((state) => state.questions);
   const currentQuestion = useQuestionsStore((state) => state.currentQuestion);
-  const goNextQuestion = useQuestionsStore((state) => state.goNextQuestion);
-  const goPrevQuestion = useQuestionsStore((state) => state.goPreviousQuestion);
+  const goNextQuestion = useQuestionsStore((state) => state.goNextQuestion)
+  const goPrevQuestion = useQuestionsStore((state)=> state.goPreviousQuestion)
 
   const questionInfo = questions[currentQuestion];
 
@@ -115,7 +99,7 @@ const Game = () => {
         >
           <ArrowBack />
         </IconButton>
-        {currentQuestion + 1}/{questions.length}
+        {currentQuestion +1}/{questions.length}
         <IconButton
           sx={{ padding: "0" }}
           onClick={goNextQuestion}
@@ -125,7 +109,7 @@ const Game = () => {
         </IconButton>
       </Stack>
       <Question info={questionInfo} />
-
+      
       <Footer />
     </>
   );
