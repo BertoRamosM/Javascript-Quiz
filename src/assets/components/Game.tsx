@@ -1,3 +1,4 @@
+import { useMediaQuery } from "@mui/material";
 import {
   Card,
   IconButton,
@@ -44,10 +45,18 @@ const Question = ({ info }: { info: QuestionType }) => {
     selectAnswers(info.id, answerIndex);
   };
 
+  const isSmallScreen = useMediaQuery("(max-width:600px)");
+
   return (
     <Card
       variant="outlined"
-      sx={{ bgcolor: "#222", textAlign: "left", p: 2, marginTop: 4 }}
+      sx={{
+        bgcolor: "#222",
+        textAlign: "left",
+        p: 2,
+        marginTop: 4,
+        ...(isSmallScreen && { width: "90%", margin: "auto" }), // Adjust styles for small screens
+      }}
     >
       <Typography variant="h5" color="lightBlue">
         {info.question}
@@ -79,8 +88,8 @@ const Question = ({ info }: { info: QuestionType }) => {
 const Game = () => {
   const questions = useQuestionsStore((state) => state.questions);
   const currentQuestion = useQuestionsStore((state) => state.currentQuestion);
-  const goNextQuestion = useQuestionsStore((state) => state.goNextQuestion)
-  const goPrevQuestion = useQuestionsStore((state)=> state.goPreviousQuestion)
+  const goNextQuestion = useQuestionsStore((state) => state.goNextQuestion);
+  const goPrevQuestion = useQuestionsStore((state) => state.goPreviousQuestion);
 
   const questionInfo = questions[currentQuestion];
 
@@ -99,7 +108,7 @@ const Game = () => {
         >
           <ArrowBack />
         </IconButton>
-        {currentQuestion +1}/{questions.length}
+        {currentQuestion + 1}/{questions.length}
         <IconButton
           sx={{ padding: "0" }}
           onClick={goNextQuestion}
@@ -109,7 +118,7 @@ const Game = () => {
         </IconButton>
       </Stack>
       <Question info={questionInfo} />
-      
+
       <Footer />
     </>
   );
