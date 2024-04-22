@@ -55,7 +55,10 @@ const Question = ({ info }: { info: QuestionType }) => {
         textAlign: "left",
         p: 2,
         marginTop: 4,
-        ...(isSmallScreen && { width: "90%", margin: "auto" }), // Adjust styles for small screens
+        overflow: "auto",
+        maxHeight: isSmallScreen ? "70vh" : "none", 
+        width: isSmallScreen ? "90%" : "auto", 
+        margin: isSmallScreen ? "auto" : "inherit", 
       }}
     >
       <Typography variant="h5" color="lightBlue">
