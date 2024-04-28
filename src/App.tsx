@@ -20,7 +20,7 @@ function App() {
   const isSmallScreen = useMediaQuery("(max-width:600px)");
 
   return (
-    <main>
+    <main style={{display: "flex", justifyContent:'center', alignItems:'center'}}>
       <Container maxWidth="sm">
         <Stack
           direction="row"

@@ -7,6 +7,7 @@ import {
   ListItem,
   ListItemButton,
   ListItemText,
+  Box
 } from "@mui/material";
 import { useQuestionsStore } from "../../store/questions";
 import { type Question as QuestionType } from "../../types";
@@ -47,13 +48,23 @@ const Question = ({ info }: { info: QuestionType }) => {
   return (
     <Card
       variant="outlined"
-      sx={{ bgcolor: "#222", textAlign: "left", p: 2, marginTop: 4 }}
+      sx={{
+        bgcolor: "#222",
+        textAlign: "left",
+        p: 2,
+        marginTop: 4,
+        maxWidth: "100%",
+      }}
     >
       <Typography variant="h5" color="lightBlue">
         {info.question}
       </Typography>
 
-      <SyntaxHighlighter language="javascript" style={hybrid}>
+      <SyntaxHighlighter
+        language="javascript"
+        style={hybrid}
+        wrapLongLines={true}
+      >
         {info.code}
       </SyntaxHighlighter>
 
